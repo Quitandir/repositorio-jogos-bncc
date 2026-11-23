@@ -1,0 +1,74 @@
+[
+  {
+    "id": "blockly-games",
+    "ano": 3,
+    "nome": "Blockly Games",
+    "descricao": "",
+    "link": "https://blockly.games/?lang=pt",
+    "habilidades": ["EF03CO02"],
+    "imagem": "/jogos/blockly-games.png"
+  },
+  {
+    "id": "lightbot",
+    "ano": 3,
+    "nome": "Lightbot",
+    "descricao": "",
+    "link": "https://www.lightbot.lu/#/welcome",
+    "habilidades": ["EF03CO02"],
+    "imagem": "/jogos/lightbot.png"
+  },
+  {
+    "id": "run-marco",
+    "ano": 3,
+    "nome": "Run Marco!",
+    "descricao": "",
+    "link": "https://runmarco.com/#jungle-1",
+    "habilidades": ["EF03CO03"],
+    "imagem": "/jogos/run-marco.jpg"
+  },
+  {
+    "id": "pixel-art-maker",
+    "ano": 3,
+    "nome": "Pixel Art Maker",
+    "descricao": "",
+    "link": "https://pixelartmaker.com/",
+    "habilidades": ["EF03CO05"],
+    "imagem": "/jogos/pixel-art-maker.png"
+  },
+  {
+    "id": "wordwall-dispositivos",
+    "ano": 3,
+    "nome": "Dispositivos de entrada e de saída (Wordwall)",
+    "descricao": "",
+    "link": "https://wordwall.net/pt/resource/53617416/computador-e-ele/dispositivos-de-entrada-e-de-sa%C3%ADda",
+    "habilidades": ["EF03CO06"],
+    "imagem": "/jogos/wordwall-dispositivos.jpg"
+  },
+  {
+    "id": "art-zoom-out-3",
+    "ano": 3,
+    "nome": "Art Zoom Out (Google Arts & Culture)",
+    "descricao": "",
+    "link": "https://artsandculture.google.com/art-zoom-out",
+    "habilidades": ["EF03CO08"],
+    "imagem": "/jogos/art-zoom-out.png"
+  },
+  {
+    "id": "quick-draw",
+    "ano": 3,
+    "nome": "Quick, Draw!",
+    "descricao": "",
+    "link": "https://quickdraw.withgoogle.com/",
+    "habilidades": ["EF03CO08"],
+    "imagem": "/jogos/quick-draw.png"
+  },
+  {
+    "id": "art-zoom-out-5",
+    "ano": 5,
+    "nome": "Art Zoom Out (Google Arts & Culture)",
+    "descricao": "",
+    "link": "https://artsandculture.google.com/art-zoom-out",
+    "habilidades": [],
+    "imagem": "/jogos/art-zoom-out.png"
+  }
+]
