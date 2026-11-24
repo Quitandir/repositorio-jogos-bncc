@@ -5,6 +5,7 @@ import CardJogo from "@/components/CardJogo/CardJogo";
 import FaixaGoogle from "@/components/FaixaGoogle/FaixaGoogle";
 import { corDoAno } from "@/components/cores";
 import jogos from "@/data/jogos.json";
+import { Metadata } from "next";
 
 // Gera /ano/3 e /ano/5 no build, a partir do JSON
 export async function generateStaticParams() {
@@ -12,9 +13,18 @@ export async function generateStaticParams() {
   return anos.map((ano) => ({ ano: String(ano) }));
 }
 
+export async function generateMetadata({ params }: PageProps<"/ano/[ano]">): Promise<Metadata> {
+  const { ano } = await params;
+  return {
+    title: `Jogos educacionais para o ${ano}º ano`,
+    description: `Jogos digitais para o ${ano}º ano do Ensino Fundamental, alinhados à BNCC Computação.`,
+    alternates: { canonical: `/ano/${ano}` },
+  };
+}
+
 export default async function PaginaAno({ params }: PageProps<"/ano/[ano]">) {
   const { ano } = await params; // params é uma Promise e o valor vem como string
-  const jogosDoAno = jogos.filter((jogo) => jogo.ano === Number(ano));
+  const jogosDoAno = jogos.filter((jogo) => String(jogo.ano) === ano);
 
   if (jogosDoAno.length === 0) notFound(); // /ano/99 ou /ano/abc → 404
 

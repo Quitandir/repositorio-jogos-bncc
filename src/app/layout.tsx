@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Google_Sans } from "next/font/google";
 
 import Rodape from "@/components/Rodape/Rodape";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const fonte = Google_Sans({
@@ -10,8 +11,15 @@ const fonte = Google_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Repositório de recursos digitais pedagógicos",
-  description: "Jogos e recursos digitais organizados por ano escolar, com curadoria da UTIN.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Jogos educacionais de Computação por ano escolar | UTIN",
+    template: "%s | UTIN",
+  },
+  description: "Jogos e recursos digitais gratuitos por ano escolar, alinhados à BNCC Computação, com curadoria da UTIN.",
+  openGraph: { type: "website", locale: "pt_BR", siteName: "Repositório de recursos digitais pedagógicos" },
+  twitter: { card: "summary_large_image" },
+  //verification: { google: "CÓDIGO_DO_SEARCH_CONSOLE" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -2,6 +2,10 @@ import CardAnoEscolar from "@/components/CardAnoEscolar/CardAnoEscolar";
 import FaixaGoogle from "@/components/FaixaGoogle/FaixaGoogle";
 import jogos from "@/data/jogos.json";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
+
 const anosComJogos = [...new Set(jogos.map((jogo) => jogo.ano))].sort((a, b) => a - b);
 
 export default function Home() {
